@@ -5,6 +5,8 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar'
 import Pricing from './components/Pricing';
 import Support from './components/Support'
+import ContactForm from './components/ContactForm';
+import { Element } from 'react-scroll';
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
       <Support />
       <AllInOne />
       <Pricing />
+      <Element name="contact">
+        <ContactForm />
+      </Element>
       <Footer />
     </>
   );
